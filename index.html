@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Cloths Online</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+        }
+
+        .brand {
+            font-size: 2.5rem;
+        }
+
+        .bg-image {
+            background-image: url("Untitled design.png");
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .content-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        #shop {
+            border-radius: 25px;
+        }
+
+        .mh1 {
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 5rem;
+        }
+
+        .alink {
+            color: white;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .roundedm {
+            border-radius: 25px;
+        }
+
+        .bg-dark1 {
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image img-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand font-weight-bold fs-4 brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link alink text-light text-decoration" href="#">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alink text-light text-decoration-none" href="#shopping">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alink text-light text-decoration-none" href="bags.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link alink text-light text-decoration-none" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-center">
+            <h1 class="text-light text-center d-block mh1">Hi welcome to Clothing store</h1>
+            <p class="text-light mp1 lead">Best in qulity, Best in experience, Best in confort, Best in Price</p>
+            <button id="shop" type="button" class="btn btn-primary px-3 py-2"><a href="#shopping"
+                    class="text-decoration-none text-light">Shop Now</a></button>
+        </div>
+    </div>
+
+    <!-- Shopping starts -->
+    <section id="shopping" class="mt-5 p-3" style="background-color: black;">
+        <div class="container-fluid">
+            <h1 class="text-light text-center">Mobiles</h1>
+            <div class="row">
+                <div class="col col-md-4 col-sm-6 col-12">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="shirt 1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Orange T-Shirt</h4>
+                                <p class="card-text text-white">Size: S</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(0)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-6">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="Shirt 2.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Black T-Shirt</h4>
+                                <p class="card-text text-white">Size: S</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(1)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-6">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="shirt 1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Orange T-Shirtx</h4>
+                                <p class="card-text text-white">Size: L</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(2)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-md-4 col-sm-6 col-12">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="Shirt 2.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Black T-Shirt</h4>
+                                <p class="card-text text-white">Size: L</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(3)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-6">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="shirt 1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Orange T-Shirt</h4>
+                                <p class="card-text text-white">Size: Xl</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(4)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-6">
+                    <div class="mt-3">
+                        <div class="card roundedm shadow bg-dark1">
+                            <img class="card-img-top mt-3" src="Shirt 2.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">Black T-Shirt</h4>
+                                <p class="card-text text-white">Size: Xl</p>
+                                <button type="button" class="btn btn-primary" onclick="addToCart(5)">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section id="about" class="mt-4 foot p-4">
+        <div class="container-fluid p-4 mt-4">
+            <div class="row">
+                <div class="col col-md-3 col-12 ">
+                    <div>
+                        <h5 class="text-white font-weight-bold">About Us</h5>
+                        <p class="lead small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Minus
+                            quos
+                            aliquid nulla, sunt asperiores </p>
+                    </div>
+                </div>
+                <div class="col col-md-3  col-12 ">
+                    <div>
+
+                        <h5 class="text-white font-weight-bold">Contact Us</h5>
+                        <p style="color: #F19E39;">Address:</p>
+                        <p style="color: #F19E39;">Phone: <a class="text-decoration-none"
+                                href="tel:+4733378901">9248383623</a></p>
+                        <p style="color: #F19E39;">Email</p>
+                        <a class="text-decoration-none"
+                            href="mailto:hemanthsainagchilukuri@gmail.com">hemanthsainagchilukuri@gmail.com</a>
+                        <p class="mt-2" style="color: #F19E39;">Fax: 1(234) 567 890</p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-12 ">
+                    <div>
+                        <h5 class="text-white font-weight-bold mb-3">Location</h5>
+                        <!-- <img src="images.jpeg" class="w-75 h-50 rounded-lg" alt=""> -->
+                        <div class="container w-100 h-50">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122110.55939540044!2d82.16482955939205!3d16.97676460204949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3827ddaf59b4f7%3A0x92f8ddb9c89a4803!2sKakinada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1718859356746!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" class="w-100 h-50"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col-md-3 col-12">
+                    <div>
+
+                        <h5 class="text-white font-weight-bold">Subscribe</h5>
+                        <p class="lead small text-secondary">Vivamus magma justo lacing aget constecute set</p>
+                        <div class="input-group mb-3">
+                            <input type="text" placeholder="Enter Mail" class="form-control rounded-0"
+                                style="background-color: rgb(27, 25, 25);">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background-color: #F19E39;"><i
+                                        class='bx bxs-envelope' style='color:#ffffff'></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
